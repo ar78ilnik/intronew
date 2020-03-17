@@ -6,32 +6,37 @@
   <link rel="stylesheet" href="css/style.min.css">
 </html>
 <body class="body">
+  <svg style="display:none">
+    <symbol viewBox="0 0 16 16" id="telephone">
+      <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3667 12.4115C11.2093 13.0657 12.0844 13.6747 12.9883 14.2359C13.0877 14.2876 13.1764 14.3587 13.2493 14.4451C13.3221 14.5314 13.3776 14.6313 13.4126 14.7388C13.4476 14.8464 13.4613 14.9594 13.453 15.0713C13.4446 15.1832 13.4144 15.2918 13.364 15.3906L13.1931 15.9412C13.1531 16.1434 13.0634 16.3308 12.9324 16.4862C12.8013 16.6416 12.6331 16.7599 12.4433 16.8303C11.8341 17.1467 11.1683 17.3407 10.4818 17.4017C8.63761 17.2874 7.04597 15.511 5.94032 14.0416C4.50305 12.1752 3.43407 10.0479 2.79428 7.78094C2.27107 6.00991 1.79898 3.65938 2.79911 2.08043C3.25028 1.55761 3.79665 1.1288 4.40941 0.816634C4.5762 0.702337 4.77008 0.634175 4.97244 0.618684C5.1748 0.603193 5.37895 0.64087 5.56535 0.728131L6.1107 0.915363C6.32667 0.966667 6.51707 1.09974 6.64289 1.28724C6.76872 1.47474 6.82039 1.70243 6.78726 1.92358C6.73724 3.18598 6.69891 4.08681 6.71416 5.12281C6.70979 5.55799 6.55275 5.60365 6.17912 5.72516C5.93484 5.80579 5.76658 5.85866 5.57317 5.92122C5.47396 5.93229 5.37857 5.96435 5.29314 6.01534C5.2077 6.06632 5.13411 6.13509 5.07698 6.21732C5.01985 6.29955 4.98049 6.3934 4.96137 6.4929C4.94225 6.5924 4.94382 6.69534 4.96595 6.7952C5.16314 7.92443 5.52257 9.02182 6.03263 10.0518C6.54994 11.0758 7.21506 12.0178 8.00531 12.8456C8.07097 12.9226 8.15163 12.9849 8.24202 13.0283C8.33241 13.0717 8.43039 13.0952 8.52943 13.0972C8.62846 13.0992 8.72637 13.0796 8.81643 13.0399C8.90648 13.0001 8.9866 12.9412 9.05165 12.8668L9.56601 12.4899C9.88287 12.2564 10.0142 12.1604 10.3636 12.4053L10.3667 12.4115Z" fill="#333333"></path>
+      </svg>
+    </symbol>
+  </svg>
   <header class="header">
-    <div class="top-block"></div>
-    <div class="header-main"></div>
-  </header>
-  <div class="container">
-    <div class="slider">
-      <div class="slider-items">
-        <div class="slider-item slider-1"></div>
-        <div class="slider-item slider-2"></div>
-        <div class="slider-item slider-3"></div>
-        <div class="slider-item slider-4"></div>
-      </div>
-      <div class="slider-controls">
-        <label>
-          <input type="radio" name="point">
-        </label>
-        <label>
-          <input type="radio" name="point">
-        </label>
-        <label>
-          <input type="radio" name="point">
-        </label>
-        <label>
-          <input type="radio" name="point">
-        </label>
+    <div class="header-main">
+      <div class="container">
+        <div class="header-wrapper"></div>
       </div>
     </div>
+  </header>
+  <div class="slider">
+    <input type="radio" name="point" id="slide1">
+    <input type="radio" name="point" id="slide2">
+    <input type="radio" name="point" id="slide3">
+    <input type="radio" name="point" id="slide4">
+    <div class="slider-items">
+      <div class="slider-item slider-1"></div>
+      <div class="slider-item slider-2"></div>
+      <div class="slider-item slider-3"></div>
+      <div class="slider-item slider-4"></div>
+    </div>
+    <div class="slider-controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
   </div>
+  <script src="js/setup.js"></script>
 </body>

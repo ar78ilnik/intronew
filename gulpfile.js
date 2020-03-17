@@ -1,7 +1,5 @@
 'use strict';
 
-const path = require('path');
-
 /* подключаем плагины */
 const gulp = require('gulp');
 const scss = require('gulp-sass');
@@ -24,6 +22,7 @@ function clean() {
 
 function copy() {
     return gulp.src([
+        'app/img/**/*.{jpg,png}',
         'app/fonts/**/*.{woff, woff2}',
         'app/js/*.*'
     ], {
@@ -75,6 +74,7 @@ function style() {
 function watch() {
     gulp.watch('app/pages/pug/**/*.pug', pugToHtml);
     gulp.watch('app/scss/*.scss', style);
+    gulp.watch('app/js/**/*.js', copy);
 };
 
 function server() {
@@ -83,6 +83,7 @@ function server() {
     });
     bs.watch('app/pages/**/*.pug').on('change', bs.reload);
     bs.watch('app/scss/*.scss').on('change', bs.reload);
+    bs.watch('app/js/**/*.js').on('change', bs.reload);
 };
 
 const build = gulp.series(clean, copy, pugToHtml, style, gulp.parallel(watch, server));

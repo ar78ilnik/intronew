@@ -1,0 +1,15 @@
+.header {
+    width: 100%;
+    height: 80px;
+
+    &-main {
+        width: 100%;
+        height: inherit;
+    }
+
+    &-wrapper {
+        width: 100%;
+        height: inherit;
+        margin: 0 auto;
+    }
+}
