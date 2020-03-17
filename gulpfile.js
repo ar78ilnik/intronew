@@ -4,7 +4,7 @@ const path = require('path');
 
 /* подключаем плагины */
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const scss = require('gulp-sass');
 const pug = require('gulp-pug');
 const htmlbeautify = require('gulp-html-beautify');
 const debug = require('gulp-debug');
@@ -22,6 +22,15 @@ function clean() {
     return del('dist');
 };
 
+function copy() {
+    return gulp.src([
+        'app/fonts/**/*.{woff, woff2}',
+        'app/js/*.*'
+    ], {
+        base: 'app',
+    }).pipe(gulp.dest('dist'));
+};
+
 function pugToHtml() {
     return gulp.src('app/pages/pug/layout.pug')
         .pipe(pug({
@@ -33,12 +42,39 @@ function pugToHtml() {
         .pipe(debug({
             title: 'rename'
         }))
-        .pipe(bs.stream())
+        .pipe(bs.reload({
+            stream: true
+        }))
 };
 
+function style() {
+    return gulp.src('app/scss/style.scss')
+        .pipe(plumber())
+        .pipe(debug({
+            title: 'src'
+        }))
+        .pipe(scss())
+        .pipe(debug({
+            title: 'scss'
+        }))
+        .pipe(postcss([
+        autoprefixer()
+    ]))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(csso())
+        .pipe(rename('style.min.css'))
+        .pipe(debug({
+            title: 'rename'
+        }))
+        .pipe(gulp.dest('dist/css'))
+        .pipe(bs.reload({
+            stream: true
+        }))
+};
 
 function watch() {
     gulp.watch('app/pages/pug/**/*.pug', pugToHtml);
+    gulp.watch('app/scss/*.scss', style);
 };
 
 function server() {
@@ -46,11 +82,14 @@ function server() {
         server: 'dist'
     });
     bs.watch('app/pages/**/*.pug').on('change', bs.reload);
+    bs.watch('app/scss/*.scss').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, pugToHtml, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, pugToHtml, style, gulp.parallel(watch, server));
 
 exports.clean = clean;
-exports.server = server;
+exports.copy = copy;
+exports.style = style;
 exports.pugToHtml = pugToHtml;
 exports.build = build;
+exports.server = server;

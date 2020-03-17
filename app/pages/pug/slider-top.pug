@@ -1,0 +1,11 @@
+- var array = [1, 2, 3, 4];
+- var string = 'slider-item slider-';
+.container
+ .slider
+  .slider-items
+   each index in array
+    div(class=`${string}` + index)
+  .slider-controls
+   each index in array
+    label
+     input(type='radio', name='point')
