@@ -22,12 +22,15 @@ function clean() {
 
 function copy() {
     return gulp.src([
+        'app/fonts/**/*.*',
         'app/img/**/*.{jpg,png}',
-        'app/fonts/**/*.{woff, woff2}',
         'app/js/*.*'
     ], {
-        base: 'app',
-    }).pipe(gulp.dest('dist'));
+            base: 'app',
+        }).pipe(gulp.dest('dist'))
+        .pipe(debug({
+            title: 'copy'
+        }));
 };
 
 function pugToHtml() {
@@ -75,6 +78,7 @@ function watch() {
     gulp.watch('app/pages/pug/**/*.pug', pugToHtml);
     gulp.watch('app/scss/*.scss', style);
     gulp.watch('app/js/**/*.js', copy);
+    gulp.watch('app/fonts/*.{woff, woff2}');
 };
 
 function server() {

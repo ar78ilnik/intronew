@@ -2,4 +2,18 @@ header.header
  .header-main
   .container
    .header-wrapper
+    include navigation.pug
+    svg(class='headerGrid-1', width='30', height='20')
+     line(x1='0', y1='3', x2='30', y2='3', stroke-width='2', stroke='#2b7de0')
+     line(x1='0', y1='10', x2='30', y2='10', stroke-width='2', stroke='#2b7de0')
+     line(x1='0', y1='17', x2='30', y2='17', stroke-width='2', stroke='#2b7de0')
+    a(class='logo headerGrid-2', href='#') LOGO
+    div(class='icons headerGrid-3')
+     svg(width='20', height='20')
+      use(xlink:href='#telephone')
+     svg(width='20', height='20')
+      use(xlink:href='#search')
+     svg(width='20', height='20')
+      use(xlink:href='#card')
+     span.icons__sales
  

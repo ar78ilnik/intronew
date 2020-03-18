@@ -1,0 +1,31 @@
+.icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__sales {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #2b7de0;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    &__sales::after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        color: white;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .icons {
+        width: 100px;
+        margin-left: auto;
+    }
+}
