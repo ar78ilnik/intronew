@@ -3,13 +3,13 @@ header.header
   .container
    .header-wrapper
     include main-nav.pug
-    svg(class='headerGrid-1', width='30', height='20')
+    svg(class='main-nav__item main-nav__item_burger headerGrid-2', width='30', height='20')
      line(x1='0', y1='3', x2='30', y2='3', stroke-width='2', stroke='#2b7de0')
      line(x1='0', y1='10', x2='30', y2='10', stroke-width='2', stroke='#2b7de0')
      line(x1='0', y1='17', x2='30', y2='17', stroke-width='2', stroke='#2b7de0')
-    div(class='logo headerGrid-2')
+    div(class='main-nav__item main-nav__item_logo headerGrid-3')
      a(class='logo__link', href='#') LOGO
-    div(class='icons headerGrid-3')
+    div(class='main-nav__item main-nav__item_icons headerGrid-4')
      svg(width='20', height='20')
       use(xlink:href='#telephone')
      svg(width='20', height='20')

@@ -1,6 +1,7 @@
 .body {
-    background-color: #ddd;
+    background-color: white;
     font-family: 'Montserrat';
     font-size: 100%;
     @include margins;
+    position: relative;
 }

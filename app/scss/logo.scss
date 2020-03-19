@@ -4,3 +4,11 @@
         color: grey;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .logo {
+        &__link {
+            font-size: 200%;
+        }
+    }
+}

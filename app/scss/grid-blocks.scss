@@ -1,11 +1,15 @@
 .headerGrid-1 {
-    grid-area: burger;
+    grid-area: nav;
 }
 
 .headerGrid-2 {
-    grid-area: logo;
+    grid-area: burger;
 }
 
 .headerGrid-3 {
+    grid-area: logo;
+}
+
+.headerGrid-4 {
     grid-area: user;
 }
