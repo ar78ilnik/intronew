@@ -1,14 +1,16 @@
 .main-nav {
     display: none;
 
-    &__item {
-        &_icons {
-            width: 30%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            justify-self: end;
-        }
+    &__item_link {
+        text-decoration: none;
+        color: grey;
+        position: relative;
+    }
+
+    &__item_link svg {
+        position: absolute;
+        top: 0;
+        right: -20px;
     }
 
     &__popup {
