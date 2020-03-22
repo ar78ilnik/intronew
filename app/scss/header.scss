@@ -22,7 +22,7 @@
     .header {
         &-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 0.5fr 1fr 1fr 1fr;
             grid-template-areas: 'burger logo . user';
         }
     }
