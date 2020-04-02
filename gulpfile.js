@@ -33,22 +33,6 @@ function copy() {
         }));
 };
 
-function pugToHtml() {
-    return gulp.src('app/pages/pug/layout.pug')
-        .pipe(pug({
-            pretty: true
-        }))
-        .pipe(gulp.dest('app/pages/templates'))
-        .pipe(rename('index.html'))
-        .pipe(gulp.dest('dist'))
-        .pipe(debug({
-            title: 'rename'
-        }))
-        .pipe(bs.reload({
-            stream: true
-        }))
-};
-
 function style() {
     return gulp.src('app/scss/style.scss')
         .pipe(plumber())
@@ -74,8 +58,18 @@ function style() {
         }))
 };
 
+function html() {
+    return gulp.src('app/pages/**/*.html', {
+            since: gulp.lastRun('html')
+        })
+        .pipe(debug({
+            title: 'html'
+        }))
+        .pipe(gulp.dest('dist'))
+};
+
 function watch() {
-    gulp.watch('app/pages/pug/**/*.pug', pugToHtml);
+    gulp.watch('app/pages/**/*.html')
     gulp.watch('app/scss/*.scss', style);
     gulp.watch('app/js/**/*.js', copy);
     gulp.watch('app/fonts/*.{woff, woff2}');
@@ -85,16 +79,16 @@ function server() {
     bs.init({
         server: 'dist'
     });
-    bs.watch('app/pages/**/*.pug').on('change', bs.reload);
+    bs.watch('app/pages/**/*.html').on('change', bs.reload);
     bs.watch('app/scss/*.scss').on('change', bs.reload);
     bs.watch('app/js/**/*.js').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, pugToHtml, style, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, style, html, gulp.parallel(watch, server));
 
 exports.clean = clean;
 exports.copy = copy;
 exports.style = style;
-exports.pugToHtml = pugToHtml;
+exports.html = html;
 exports.build = build;
 exports.server = server;
