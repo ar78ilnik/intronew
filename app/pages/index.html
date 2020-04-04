@@ -19,42 +19,96 @@
             <use xlink:href='#cruz'></use>
           </svg>
         </div>
-      </nav>
-      <section class='popup__menu'>
-        <ul class='popup__list'>
-          <li class='popup__item popup__item_title'>
-            <a class='popup__link popup__link_title' href=''>Услуги</a>
-          </li>
-          <li class='popup__item'>
-            <a class='popup__link' href='/services/investicii' title='Управление активами и инвестиции'>
-              <span class='popup__link-text'>Управление активами и инвестиции</span>
-            </a>
-            <ul class='dropdown'>
+        <ul class="popup__list">
+          <li class='popup__item-first'>
+            <a href="/catalog/" onclick="menuOpen('s_mn_1');return(false)">Каталог</a>
+            <ul class='popup__list_second'>
               <li>
-                <svg class='svg svg-close' width='14' height='14' viewBox='0 0 14 14'>
-                  <path data-name='Rounded Rectangle 568 copy 16' class='cls-1' d='M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z' transform='translate(-1001 -946)'></path>
-                </svg>
+                <a href='/izluchaushie-paneli/'>Потолочные излучающие панели</a>
+                <ul class='popup__list_third'>
+                  <li>
+                    <a href="#">Панели Zehnder</a>
+                  </li>
+                  <li>
+                    <a href="#">Панели Rehau</a>
+                  </li>
+                  <li>
+                    <a href="#">Панели Fraccaro</a>
+                  </li>
+                </ul>
+                <ul class='popup__list_third'>
+                  <a href="#">Панели лучистого потолочного отопления</a>
+                </ul>
+                <ul class='popup__list_third'>
+                  <a href="#">Потолочные панели охлаждения</a>
+                </ul>
               </li>
-              <li class='menu__back'>
-                <a href=''>
-                  <svg class='svg' width='16' height='12' viewBox='0 0 16 12'>
-                    <path data-name='Rounded Rectangle 804' d='M998,953H986.4l3.313,3.286a1,1,0,0,1,0,1.414,0.99,0.99,0,0,1-1.407,0l-5.034-4.993a1,1,0,0,1,0-1.414l5.034-5.024a0.992,0.992,0,0,1,1.407,0,1.006,1.006,0,0,1,0,1.415L986.384,951H998A1,1,0,0,1,998,953Z' transform='translate(-983 -946)'></path>
-                  </svg>
-                </a>
-              </li>
-              <li class='menu__title'>
-                <a href=''>Управление активами и инвестиции</a>
-              </li>
-              <li class='menu__item'>
-                <a href='invest.html' class='dark-color'>ETF-акции</a>
-              </li>
-              <li class='menu__item'>
-                <a href='' class='dark-color'>Для крупного частного капитала</a>
+              <li>
+                <a href='ventilacia/'>Вентиляция</a>
               </li>
             </ul>
           </li>
+          <li class='popup__item-first'>
+            <a href='uslugi/' onclick="menuOpen('s_mn_2');return(false)">Услуги</a>
+            <ul class='popup__list_second'>
+              <li>
+                <a href='uslugi/'>Проектирование</a>
+              </li>
+              <li>
+                <a href='uslugi/'>Подбор оборудования</a>
+              </li>
+              <li>
+                <a href="#">Монтаж</a>
+                <ul class='popup__list_third'>
+                  <li>
+                    <a href="#">Вентиляция</a>
+                  </li>
+                  <li>
+                    <a href="#">Панели лучистого потолочного отопления</a>
+                  </li>
+                  <li>
+                    <a href="#">Потолочные панели охлаждения</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Сервис</a>
+              </li>
+            </ul>
+          </li>
+          <li class='popup__item-first'>
+            <a href='raboti/' onclick="menuOpen('s_mn_3');return(false)">Наши работы</a>
+            <ul class='popup__list_second'>
+              <li>
+                <a href='raboti/'>Подпункт меню №1</a>
+              </li>
+              <li>
+                <a href='raboti/'>Подпункт меню №2</a>
+              </li>
+              <li>
+                <a href='raboti/'>Подпункт меню №3</a>
+              </li>
+            </ul>
+          </li>
+          <li class='popup__item-first'>
+            <a href='compania/' onclick="menuOpen('s_mn_3');return(false)">Компания</a>
+            <ul class='popup__list_second'>
+              <li>
+                <a href='compania/'>О компании</a>
+              </li>
+              <li>
+                <a href='compania/'>Бренды</a>
+              </li>
+              <li>
+                <a href='compania/'>Новости</a>
+              </li>
+            </ul>
+          </li>
+          <li class='popup__item-first'>
+            <a href='contacti/' onclick="menuOpen('s_mn_3');return(false)">Контакты</a>
+          </li>
         </ul>
-      </section>
+      </nav>
     </div>
   </div>
   <svg style='display:none'>
@@ -85,11 +139,10 @@
         <div class='header-wrapper'>
           <nav class='main-nav headerGrid-1'>
             <ul class='main-nav__list'>
+              <li class='main-nav__unit'><a class='main-nav__link' href='#'>Каталог</a></li>
               <li class='main-nav__unit'><a class='main-nav__link' href='#'>Услуги</a></li>
-              <li class='main-nav__unit'><a class='main-nav__link' href='#'>Продукция</a></li>
-              <li class='main-nav__unit'><a class='main-nav__link' href='#'>Проекты</a></li>
+              <li class='main-nav__unit'><a class='main-nav__link' href='#'>Наши работы</a></li>
               <li class='main-nav__unit'><a class='main-nav__link' href='#'>Компания</a></li>
-              <li class='main-nav__unit'><a class='main-nav__link' href='#'>Пресс-центр</a></li>
               <li class='main-nav__unit'><a class='main-nav__link' href='#'>Контакты</a></li>
             </ul>
           </nav>
