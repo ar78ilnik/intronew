@@ -1,54 +1,57 @@
 .services {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+  &__head {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+  }
+
+  &__head::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 30%;
+    right: 0;
+  }
+
+  &__submenu-list {
     list-style-type: none;
+    margin: 0;
     padding: 0;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    width: 80%;
-    margin: 0 auto;
+  }
 
-    &__head {
-        display: block;
-        width: 100%;
-        cursor: pointer;
-        position: relative;
+  &__submenu-link {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  &__menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &_opened {
+      display: block;
     }
+  }
 
-    &__head::after {
-        content: '';
-        display: block;
-        width: 10px;
-        height: 10px;
-        background-color: red;
-        position: absolute;
-        top: 30%;
-        right: 0;
-    }
+  &__item {
+    padding-top: 20px;
+  }
 
-    &__submenu-list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__menu {
-        display: none;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-
-        &_opened {
-            display: block;
-        }
-    }
-
-    &__item,
-    &__submenu-item {
-        padding-top: 20px;
-    }
-
-    &__link,
-    &__submenu-link {
-        text-decoration: none;
-        color: black;
-    }
+  &__link,
+  &__submenu-link {
+    text-decoration: none;
+    color: black;
+  }
 }
