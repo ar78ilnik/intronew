@@ -37,3 +37,16 @@
     flex-grow: 1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .works {
+    &__item {
+      flex-basis: 50%;
+    }
+
+    &__blocks {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

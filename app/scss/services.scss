@@ -55,3 +55,15 @@
     color: black;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .services {
+    &__head {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
+    }
+  }
+}
