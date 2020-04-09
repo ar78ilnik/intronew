@@ -1,0 +1,16 @@
+.footer {
+  background-color: #2f3338;
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__submenu-list {
+    list-style-type: none;
+  }
+
+  &__submenu-link {
+    color: white;
+    text-decoration: none;
+  }
+}
