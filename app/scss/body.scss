@@ -1,7 +1,8 @@
 .body {
-    background-color: white;
-    font-family: 'Montserrat';
-    font-size: 100%;
-    @include margins;
-    position: relative;
+  background-color: white;
+  font-family: 'Montserrat';
+  font-size: 100%;
+  @include margins;
+  position: relative;
+  padding: 0;
 }

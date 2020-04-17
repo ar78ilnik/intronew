@@ -3,13 +3,23 @@
 
   &__list {
     list-style-type: none;
+    padding: 0;
   }
 
   &__submenu-list {
     list-style-type: none;
+    padding: 0;
+  }
+
+  &__submenu-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   &__submenu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
   }
