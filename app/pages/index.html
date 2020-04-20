@@ -139,23 +139,35 @@
     <div class='header-main'>
       <div class='container'>
         <div class='header-wrapper'>
-          <nav class='main-nav headerGrid-1'>
-            <ul class='main-nav__list'>
-              <li class='main-nav__unit'><a class='main-nav__link' href='catalog/'>Каталог</a></li>
-              <li class='main-nav__unit'><a class='main-nav__link' href='uslugi/'>Услуги</a></li>
-              <li class='main-nav__unit'><a class='main-nav__link' href='raboti/'>Наши работы</a></li>
-              <li class='main-nav__unit'><a class='main-nav__link' href='compania/'>Компания</a></li>
-              <li class='main-nav__unit'><a class='main-nav__link' href='contacti/'>Контакты</a></li>
+          <nav class='nav nav_main headerGrid-1'>
+            <ul class='nav__list'>
+              <li class='nav__unit'>
+                <a class='nav__link' href='catalog/'>Каталог</a>
+              </li>
+              <li class='nav__unit'>
+                <a class='nav__link' href='uslugi/'>Услуги</a>
+              </li>
+              <li class='nav__unit'>
+                <a class='nav__link' href='raboti/'>Наши работы</a>
+              </li>
+              <li class='nav__unit'>
+                <a class='nav__link' href='compania/'>Компания</a>
+              </li>
+              <li class='nav__unit'>
+                <a class='nav__link' href='contacti/'>Контакты</a>
+              </li>
             </ul>
           </nav>
-          <svg class='main-nav__item main-nav__item_burger headerGrid-2' width='30' height='20'>
+          <svg class='nav__item nav__item_burger headerGrid-2' width='30' height='20'>
             <line x1='0' y1='3' x2='30' y2='3' stroke-width='2' stroke='#2b7de0'></line>
             <line x1='0' y1='10' x2='30' y2='10' stroke-width='2' stroke='#2b7de0'></line>
             <line x1='0' y1='17' x2='30' y2='17' stroke-width='2' stroke='#2b7de0'></line>
           </svg>
-          <div class='main-nav__item main-nav__item_logo headerGrid-3'><a class='logo__link' href='#'>LOGO</a></div>
-          <div class='main-nav__item main-nav__item_icon headerGrid-4'>
-            <a class='main-nav__item_link' href='tel: +700000000'>+7000000000
+          <div class='nav__item nav__item_logo headerGrid-3'>
+            <a class='logo__link' href='#'>LOGO</a>
+          </div>
+          <div class='nav__item nav__item_icon headerGrid-4'>
+            <a class='nav__item_link' href='tel: +700000000'>+7000000000
               <svg width='20' height='20'>
                 <use xlink:href='#telephone'></use>
               </svg>
@@ -300,27 +312,25 @@
   </section>
   <footer class="footer">
     <section class='footer__menu'>
-      <ul class='footer__list'>
-        <li class='footer__item'>
-          <ul class='footer__submenu-list'>
-            <li class='footer__submenu-item'>
-              <a class='footer__submenu-link' href='catalog/'>Каталог</a>
-            </li>
-            <li class='footer__submenu-item'>
-              <a class='footer__submenu-link' href='uslugi/'>Услуги</a>
-            </li>
-            <li class='footer__submenu-item'>
-              <a class='footer__submenu-link' href='raboti/'>Наши работы</a>
-            </li>
-            <li class='footer__submenu-item'>
-              <a class='footer__submenu-link' href='compania/'>Компания</a>
-            </li>
-            <li class='footer__submenu-item'>
-              <a class='footer__submenu-link' href='contacti/'>Контакты</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <nav class='nav headerGrid-1'>
+        <ul class='nav__list'>
+          <li class='nav__unit'>
+            <a class='nav__link' href='catalog/'>Каталог</a>
+          </li>
+          <li class='nav__unit'>
+            <a class='nav__link' href='uslugi/'>Услуги</a>
+          </li>
+          <li class='nav__unit'>
+            <a class='nav__link' href='raboti/'>Наши работы</a>
+          </li>
+          <li class='nav__unit'>
+            <a class='nav__link' href='compania/'>Компания</a>
+          </li>
+          <li class='nav__unit'>
+            <a class='nav__link' href='contacti/'>Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </footer>
   <script src='js/setup.js'></script>

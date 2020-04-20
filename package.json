@@ -1,21 +1,13 @@
 {
-  "name": "intronew",
+  "name": "Documents",
   "version": "1.0.0",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ar78ilnik/intronew.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ar78ilnik/intronew/issues"
-  },
-  "homepage": "https://github.com/ar78ilnik/intronew#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "browser-sync": "^2.26.7",

@@ -1,0 +1,25 @@
+.nav {
+  &__unit {
+    list-style-type: none;
+  }
+
+  &_main {
+    display: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: grey;
+    position: relative;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    &_main {
+      display: flex;
+      height: inherit;
+      align-items: center;
+    }
+  }
+}

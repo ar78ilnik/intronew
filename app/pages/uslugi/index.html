@@ -5,11 +5,168 @@
   <meta charset='utf-8'>
   <title>Услуги</title>
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'>
-  <link rel='stylesheet' href='css/style.min.css'>
+  <link rel='stylesheet' href='../css/style.min.css'>
 </head>
 
-<body>
+<body class='body'>
+  <div class='popup'>
+    <div class='container container__popup'>
+      <nav class='main-nav main-nav__popup'>
+        <div class="main-nav__popup_nav-block">
+          <div class='logo'><a class='logo__link' href='#'>LOGO</a></div>
+          <div class='logo__close'>
+            <svg width='20' height='20'>
+              <use xlink:href='#cruz'></use>
+            </svg>
+          </div>
+        </div>
+        <ul class="popup__list">
+          <li class='popup__item-first'>
+            <a class='popup__link' href="/catalog/" onclick="menuOpen('s_mn_1');return(false)">Каталог</a>
+            <ul class='popup__list_second'>
+              <li>
+                <a class='popup__link' href='/izluchaushie-paneli/'>Потолочные излучающие панели</a>
+                <ul class='popup__list_third'>
+                  <li>
+                    <a class='popup__link' href="#">Панели Zehnder</a>
+                  </li>
+                  <li>
+                    <a class='popup__link' href="#">Панели Rehau</a>
+                  </li>
+                  <li>
+                    <a class='popup__link' href="#">Панели Fraccaro</a>
+                  </li>
+                </ul>
+                <ul class='popup__list_third'>
+                  <a class='popup__link' href="#">Панели лучистого потолочного отопления</a>
+                </ul>
+                <ul class='popup__list_third'>
+                  <a class='popup__link' href="#">Потолочные панели охлаждения</a>
+                </ul>
+              </li>
+              <li>
+                <a class='popup__link' href='ventilacia/'>Вентиляция</a>
+              </li>
+            </ul>
+          </li>
+          <li class='popup__item-first'>
+            <a class='popup__link' href='uslugi/' onclick="menuOpen('s_mn_2');return(false)">Услуги</a>
+            <ul class='popup__list_second'>
+              <li>
+                <a class='popup__link' href='uslugi/'>Проектирование</a>
+              </li>
+              <li>
+                <a class='popup__link' href='uslugi/'>Подбор оборудования</a>
+              </li>
+              <li>
+                <a class='popup__link' href="#">Монтаж</a>
+                <ul class='popup__list_third'>
+                  <li>
+                    <a class='popup__link' href="#">Вентиляция</a>
+                  </li>
+                  <li>
+                    <a class='popup__link' href="#">Панели лучистого потолочного отопления</a>
+                  </li>
+                  <li>
+                    <a class='popup__link' href="#">Потолочные панели охлаждения</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class='popup__link' href="#">Сервис</a>
+              </li>
+            </ul>
+          </li>
+          <li class='popup__item-first'>
+            <a class='popup__link' href='raboti/' onclick="menuOpen('s_mn_3');return(false)">Наши работы</a>
+            <ul class='popup__list_second'>
+              <li>
+                <a class='popup__link' href='raboti/'>Подпункт меню №1</a>
+              </li>
+              <li>
+                <a class='popup__link' href='raboti/'>Подпункт меню №2</a>
+              </li>
+              <li>
+                <a class='popup__link' href='raboti/'>Подпункт меню №3</a>
+              </li>
+            </ul>
+          </li>
+          <li class='popup__item-first'>
+            <a class='popup__link' href='compania/' onclick="menuOpen('s_mn_3');return(false)">Компания</a>
+            <ul class='popup__list_second'>
+              <li>
+                <a class='popup__link' href='compania/'>О компании</a>
+              </li>
+              <li>
+                <a class='popup__link' href='compania/'>Бренды</a>
+              </li>
+              <li>
+                <a class='popup__link' href='compania/'>Новости</a>
+              </li>
+            </ul>
+          </li>
+          <li class='popup__item-first'>
+            <a class='popup__link' href='contacti/' onclick="menuOpen('s_mn_3');return(false)">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <svg style='display:none'>
+    <symbol viewBox='0 0 20 20' id='telephone'>
+      <svg width='20' height='20' viewBox='0 0 20 20' fill='grey' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M10.3667 12.4115C11.2093 13.0657 12.0844 13.6747 12.9883 14.2359C13.0877 14.2876 13.1764 14.3587 13.2493 14.4451C13.3221 14.5314 13.3776 14.6313 13.4126 14.7388C13.4476 14.8464 13.4613 14.9594 13.453 15.0713C13.4446 15.1832 13.4144 15.2918 13.364 15.3906L13.1931 15.9412C13.1531 16.1434 13.0634 16.3308 12.9324 16.4862C12.8013 16.6416 12.6331 16.7599 12.4433 16.8303C11.8341 17.1467 11.1683 17.3407 10.4818 17.4017C8.63761 17.2874 7.04597 15.511 5.94032 14.0416C4.50305 12.1752 3.43407 10.0479 2.79428 7.78094C2.27107 6.00991 1.79898 3.65938 2.79911 2.08043C3.25028 1.55761 3.79665 1.1288 4.40941 0.816634C4.5762 0.702337 4.77008 0.634175 4.97244 0.618684C5.1748 0.603193 5.37895 0.64087 5.56535 0.728131L6.1107 0.915363C6.32667 0.966667 6.51707 1.09974 6.64289 1.28724C6.76872 1.47474 6.82039 1.70243 6.78726 1.92358C6.73724 3.18598 6.69891 4.08681 6.71416 5.12281C6.70979 5.55799 6.55275 5.60365 6.17912 5.72516C5.93484 5.80579 5.76658 5.85866 5.57317 5.92122C5.47396 5.93229 5.37857 5.96435 5.29314 6.01534C5.2077 6.06632 5.13411 6.13509 5.07698 6.21732C5.01985 6.29955 4.98049 6.3934 4.96137 6.4929C4.94225 6.5924 4.94382 6.69534 4.96595 6.7952C5.16314 7.92443 5.52257 9.02182 6.03263 10.0518C6.54994 11.0758 7.21506 12.0178 8.00531 12.8456C8.07097 12.9226 8.15163 12.9849 8.24202 13.0283C8.33241 13.0717 8.43039 13.0952 8.52943 13.0972C8.62846 13.0992 8.72637 13.0796 8.81643 13.0399C8.90648 13.0001 8.9866 12.9412 9.05165 12.8668L9.56601 12.4899C9.88287 12.2564 10.0142 12.1604 10.3636 12.4053L10.3667 12.4115Z'></path>
+      </svg>
+    </symbol>
+    <symbol viewBox='0 0 20 20' id='search'>
+      <svg width='20' height='20' viewBox='0 0 20 20' fill='grey' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M16.709,16.719a1,1,0,0,1-1.412,0l-3.256-3.287A7.475,7.475,0,1,1,15,7.5a7.433,7.433,0,0,1-1.549,4.518l3.258,3.289A1,1,0,0,1,16.709,16.719ZM7.5,2A5.5,5.5,0,1,0,13,7.5,5.5,5.5,0,0,0,7.5,2Z'></path>
+      </svg>
+    </symbol>
+    <symbol viewBox='0 0 20 20' id='card'>
+      <svg width='20' height='20' viewBox='0 0 20 20' fill='grey' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M956.047,952.005l-0.939,1.009-11.394-.008-0.952-1-0.953-6h-2.857a0.862,0.862,0,0,1-.952-1,1.025,1.025,0,0,1,1.164-1h2.327c0.3,0,.6.006,0.6,0.006a1.208,1.208,0,0,1,1.336.918L943.817,947h12.23L957,948v1Zm-11.916-3,0.349,2h10.007l0.593-2Zm1.863,5a3,3,0,1,1-3,3A3,3,0,0,1,945.994,954.005ZM946,958a1,1,0,1,0-1-1A1,1,0,0,0,946,958Zm7.011-4a3,3,0,1,1-3,3A3,3,0,0,1,953.011,954.005ZM953,958a1,1,0,1,0-1-1A1,1,0,0,0,953,958Z' transform='translate(-938 -944)'></path>
+      </svg>
+    </symbol>
+    <symbol viewBox='0 -5 10 20' id='cruz'>
+      <svg width='20' height='20' viewBox='0 0 20 20' fill='grey' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M1009.4,953l5.32,5.315a0.987,0.987,0,0,1,0,1.4,1,1,0,0,1-1.41,0L1008,954.4l-5.32,5.315a0.991,0.991,0,0,1-1.4-1.4L1006.6,953l-5.32-5.315a0.991,0.991,0,0,1,1.4-1.4l5.32,5.315,5.31-5.315a1,1,0,0,1,1.41,0,0.987,0.987,0,0,1,0,1.4Z' transform='translate(-1001 -946)'></path>
+      </svg>
+    </symbol>
+  </svg>
+  <header class='header'>
+    <div class='header-main'>
+      <div class='container'>
+        <div class='header-wrapper'>
+          <nav class='main-nav headerGrid-1'>
+            <ul class='main-nav__list'>
+              <li class='main-nav__unit'><a class='main-nav__link' href='catalog/'>Каталог</a></li>
+              <li class='main-nav__unit'><a class='main-nav__link' href='uslugi/'>Услуги</a></li>
+              <li class='main-nav__unit'><a class='main-nav__link' href='raboti/'>Наши работы</a></li>
+              <li class='main-nav__unit'><a class='main-nav__link' href='compania/'>Компания</a></li>
+              <li class='main-nav__unit'><a class='main-nav__link' href='contacti/'>Контакты</a></li>
+            </ul>
+          </nav>
+          <svg class='main-nav__item main-nav__item_burger headerGrid-2' width='30' height='20'>
+            <line x1='0' y1='3' x2='30' y2='3' stroke-width='2' stroke='#2b7de0'></line>
+            <line x1='0' y1='10' x2='30' y2='10' stroke-width='2' stroke='#2b7de0'></line>
+            <line x1='0' y1='17' x2='30' y2='17' stroke-width='2' stroke='#2b7de0'></line>
+          </svg>
+          <div class='main-nav__item main-nav__item_logo headerGrid-3'><a class='logo__link' href='#'>LOGO</a></div>
+          <div class='main-nav__item main-nav__item_icon headerGrid-4'>
+            <a class='main-nav__item_link' href='tel: +700000000'>+7000000000
+              <svg width='20' height='20'>
+                <use xlink:href='#telephone'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <h1>Услуги</h1>
+  <script src='../js/setup.js'></script>
+  <script src='../js/menu-services.js'></script>
 </body>
 
 </html>
