@@ -1,13 +1,11 @@
 .nav {
-  &__unit {
+  display: none;
+
+  &-main__unit {
     list-style-type: none;
   }
 
-  &_main {
-    display: none;
-  }
-
-  &__link {
+  &-main__link {
     text-decoration: none;
     color: grey;
     position: relative;
@@ -16,9 +14,35 @@
 
 @media (min-width: $desktop-width) {
   .nav {
-    &_main {
+    display: block;
+
+    &__burger {
+      display: none;
+    }
+
+    &-main {
+      height: 100%;
+    }
+
+    &-main__list {
       display: flex;
-      height: inherit;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-main__unit {
+      width: auto;
+      flex-grow: 1;
+      text-align: center;
+      height: 100%;
+    }
+
+    &-main__link {
+      height: 100%;
+      display: flex;
       align-items: center;
     }
   }
