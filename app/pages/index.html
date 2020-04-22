@@ -140,21 +140,21 @@
       <div class='container'>
         <div class='header-wrapper'>
           <nav class='nav nav-main headerGrid-1'>
-            <ul class='nav-main__list'>
-              <li class='nav-main__unit'>
-                <a class='nav-main__link' href='catalog/'>Каталог</a>
+            <ul class='nav__list nav__list_main'>
+              <li class='nav__unit nav__unit_main'>
+                <a class='nav__link' href='catalog/'>Каталог</a>
               </li>
-              <li class='nav-main__unit'>
-                <a class='nav-main__link' href='uslugi/'>Услуги</a>
+              <li class='nav__unit nav__unit_main'>
+                <a class='nav__link' href='uslugi/'>Услуги</a>
               </li>
-              <li class='nav-main__unit'>
-                <a class='nav-main__link' href='raboti/'>Наши работы</a>
+              <li class='nav__unit nav__unit_main'>
+                <a class='nav__link' href='raboti/'>Наши работы</a>
               </li>
-              <li class='nav-main__unit'>
-                <a class='nav-main__link' href='compania/'>Компания</a>
+              <li class='nav__unit nav__unit_main'>
+                <a class='nav__link' href='compania/'>Компания</a>
               </li>
-              <li class='nav-main__unit'>
-                <a class='nav-main__link' href='contacti/'>Контакты</a>
+              <li class='nav__unit nav__unit_main'>
+                <a class='nav__link' href='contacti/'>Контакты</a>
               </li>
             </ul>
           </nav>
@@ -198,18 +198,20 @@
   <section class='services'>
     <h2 class="title">Наши услуги</h2>
     <div class='services__head'>Выберите услугу</div>
-    <ul class='services__menu'>
-      <li class='services__item'>
-        <ul class='services__submenu-list'>
-          <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/proectirovanie.html'>Проектирование</a></li>
-          <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/podbor-oborudovania.html'>Подбор оборудования</a></li>
-          <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/montaz/ventilacia.html'>Вентиляция</a></li>
-          <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/montaz/sistemi-luchistogo-otoplenia.html'>Системы лучистого отопления</a></li>
-          <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/montaz/sistemi-luchistogo-ojlozdenia.html'>Системы лучистого охлождения</a></li>
-          <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/servis.html'>Сервис</a></li>
-        </ul>
-      </li>
-    </ul>
+    <nav class="services__navigation">
+      <ul class='services__menu'>
+        <li class='services__item'>
+          <ul class='services__submenu-list'>
+            <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/proectirovanie.html'>Проектирование</a></li>
+            <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/podbor-oborudovania.html'>Подбор оборудования</a></li>
+            <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/montaz/ventilacia.html'>Вентиляция</a></li>
+            <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/montaz/sistemi-luchistogo-otoplenia.html'>Системы лучистого отопления</a></li>
+            <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/montaz/sistemi-luchistogo-ojlozdenia.html'>Системы лучистого охлождения</a></li>
+            <li class='services__submenu-item'><a class='services__submenu-link' href='uslugi/servis.html'>Сервис</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </section>
   <section class='blocks'>
     <div class='blocks__item'>
@@ -312,21 +314,21 @@
   </section>
   <footer class="footer">
     <section class='footer__menu'>
-      <nav class='nav headerGrid-1'>
+      <nav class='nav nav_footer headerGrid-1'>
         <ul class='nav__list'>
-          <li class='nav__unit'>
+          <li class='nav__unit nav__unit_footer'>
             <a class='nav__link' href='catalog/'>Каталог</a>
           </li>
-          <li class='nav__unit'>
+          <li class='nav__unit nav__unit_footer'>
             <a class='nav__link' href='uslugi/'>Услуги</a>
           </li>
-          <li class='nav__unit'>
+          <li class='nav__unit nav__unit_footer'>
             <a class='nav__link' href='raboti/'>Наши работы</a>
           </li>
-          <li class='nav__unit'>
+          <li class='nav__unit nav__unit_footer'>
             <a class='nav__link' href='compania/'>Компания</a>
           </li>
-          <li class='nav__unit'>
+          <li class='nav__unit nav__unit_footer'>
             <a class='nav__link' href='contacti/'>Контакты</a>
           </li>
         </ul>
@@ -335,6 +337,7 @@
   </footer>
   <script src='js/setup.js'></script>
   <script src='js/menu-services.js'></script>
+  <script src='js/popup.js'></script>
 </body>
 
 </html>
