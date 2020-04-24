@@ -1,0 +1,7 @@
+@media (min-width: $tablet-width) {
+  .main-blocks {
+    &__item {
+      display: flex;
+    }
+  }
+}
