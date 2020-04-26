@@ -1,7 +1,48 @@
+.main-blocks {
+  &__item {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  &__text {
+    font-size: 90%;
+    line-height: 170%;
+  }
+
+  &__link {
+    font-size: 80%;
+    text-decoration: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-blocks {
     &__item {
       display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+    &__content {
+      order: 0;
+      flex-basis: 40%;
+    }
+
+    &__image {
+      order: 1;
+      flex-basis: 40%;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-blocks {
+    &__item {
+      margin-top: 10vh;
+      margin-bottom: 10vh;
     }
   }
 }

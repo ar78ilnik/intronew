@@ -1,80 +1,79 @@
 .blocks {
-    font-family: 'Montserrat';
+  font-family: 'Montserrat';
 
-    &__item {
-        width: 100%;
-        height: 340px;
-    }
+  &__item {
+    width: 100%;
+    height: 340px;
+  }
 
-    &__link {
-        display: block;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        color: white;
-    }
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+  }
 
-    &__text {
-        display: block;
-        width: 60%;
-        margin: 0 auto;
-        padding-top: 200px;
-        ;
-    }
+  &__text {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
 
-    &__item:nth-child(1) &__link {
-        background: url(../img/1.webp) center top / cover no-repeat;
-    }
+  &__item:nth-child(1) &__link {
+    background: url(../img/1.webp) center top / cover no-repeat;
+  }
 
-    &__item:nth-child(2) &__link {
-        background: url(../img/2.webp) center top / cover no-repeat;
-    }
+  &__item:nth-child(2) &__link {
+    background: url(../img/2.webp) center top / cover no-repeat;
+  }
 
-    &__item:nth-child(3) &__link {
-        background: url(../img/3.webp) center top / cover no-repeat;
-        flex-grow: 1;
-    }
+  &__item:nth-child(3) &__link {
+    background: url(../img/3.webp) center top / cover no-repeat;
+    flex-grow: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
-    .blocks {
-        display: flex;
-        flex-wrap: wrap;
+  .blocks {
+    display: flex;
+    flex-wrap: wrap;
 
-        &__item:nth-child(1) {
-            flex-basis: 50%;
-        }
-
-        &__item:nth-child(2) {
-            flex-basis: 50%;
-        }
-
-        &__item:nth-child(3) {
-            flex-basis: 100%;
-        }
+    &__item:nth-child(1) {
+      flex-basis: 50%;
     }
+
+    &__item:nth-child(2) {
+      flex-basis: 50%;
+    }
+
+    &__item:nth-child(3) {
+      flex-basis: 100%;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .blocks {
-        display: flex;
-        flex-wrap: nowrap;
+  .blocks {
+    display: flex;
+    flex-wrap: nowrap;
 
-        &__item > &__link:hover {
-            filter: brightness(0.8);
-            transition: .5s linear;
-        }
-
-        &__item:nth-child(1) {
-            flex-basis: 50%;
-        }
-
-        &__item:nth-child(2) {
-            flex-basis: 50%;
-        }
-
-        &__item:nth-child(3) {
-            flex-basis: 100%;
-        }
+    &__item > &__link:hover {
+      filter: brightness(0.8);
+      transition: .5s linear;
     }
+
+    &__item:nth-child(1) {
+      flex-basis: 50%;
+    }
+
+    &__item:nth-child(2) {
+      flex-basis: 50%;
+    }
+
+    &__item:nth-child(3) {
+      flex-basis: 100%;
+    }
+  }
 }

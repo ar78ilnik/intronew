@@ -53,8 +53,16 @@
       justify-content: space-between;
       padding: 0;
       margin: 0;
-      width: 100%;
+      width: 70%;
       height: 100%;
+    }
+
+    &__list_footer {
+      padding: 0;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
     }
 
     &__unit {

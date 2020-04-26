@@ -1,0 +1,51 @@
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5vh;
+
+  &__item {
+    flex-basis: 40%;
+    margin-bottom: 5vh;
+  }
+
+  &__available {
+    display: block;
+    font-size: 70%;
+    color: green;
+
+    &_not {
+      color: red;
+    }
+  }
+
+  &__about {
+    font-size: 80%;
+  }
+
+  &__price {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 1vh;
+  }
+
+  &__button {
+    margin-top: 2vh;
+    padding: 15px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+  }
+
+  &__button:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog {
+    &__item {
+      flex-basis: 30%;
+    }
+  }
+}

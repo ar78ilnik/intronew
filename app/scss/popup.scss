@@ -9,8 +9,13 @@
   left: 0;
   z-index: 3;
 
-  &__menu {
-    padding-top: 20px;
+  &__navigation {
+    width: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__list {

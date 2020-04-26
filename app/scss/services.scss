@@ -67,3 +67,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .services {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
