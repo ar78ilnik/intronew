@@ -5,4 +5,8 @@
   @include margins;
   position: relative;
   padding: 0;
+
+  &__title {
+    display: none;
+  }
 }
