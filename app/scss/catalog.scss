@@ -1,4 +1,6 @@
 .catalog {
+  padding-top: 5vh;
+
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -6,8 +8,6 @@
     width: 80%;
     margin: 0 auto;
   }
-
-  padding-top: 5vh;
 
   &__item {
     flex-basis: 40%;
