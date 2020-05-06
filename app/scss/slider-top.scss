@@ -1,90 +1,90 @@
 .slider {
+  width: 100%;
+  height: 27vh;
+  position: relative;
+  box-sizing: content-box;
+
+  &-items {
     width: 100%;
-    height: 50vh;
-    position: relative;
-    box-sizing: content-box;
+    height: inherit;
+    overflow: hidden;
+  }
 
-    &-items {
-        width: 100%;
-        height: inherit;
-        overflow: hidden;
+  &-item {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &-controls {
+    width: 8px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+
+    & > label {
+      width: 8px;
+      height: 8px;
+      background-color: #414141;
     }
-
-    &-item {
-        width: 100%;
-        height: inherit;
-        position: absolute;
-        display: none;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    &-controls {
-        width: 8px;
-        height: 60px;
-        position: absolute;
-        top: 50%;
-        right: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 2;
-
-        & > label {
-            width: 8px;
-            height: 8px;
-            background-color: #414141;
-        }
-    }
+  }
 }
 
 .slider > input {
-    display: none;
+  display: none;
 }
 
 .slider-controls label:nth-of-type(1) > input,
 .slider-controls label:nth-of-type(2) > input,
 .slider-controls label:nth-of-type(3) > input,
 .slider-controls label:nth-of-type(4) > input {
-    box-sizing: border-box;
-    border: 1px solid #ddd;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
 }
 
 #slide1:checked ~ .slider-items > .slider-1,
 #slide2:checked ~ .slider-items > .slider-2,
 #slide3:checked ~ .slider-items > .slider-3,
 #slide4:checked ~ .slider-items > .slider-4 {
-    display: block;
-    z-index: 1;
-    opacity: 1;
-    filter: invert(30%);
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  filter: invert(30%);
 }
 
 .slider-1 {
-    background-image: url(../img/bg-slider1.jpg);
+  background-image: url(../img/bg-slider1.jpg);
 }
 
 .slider-2 {
-    background-image: url(../img/bg-slider2.jpg);
+  background-image: url(../img/bg-slider2.jpg);
 }
 
 .slider-3 {
-    background-image: url(../img/bg-slider3.jpg);
+  background-image: url(../img/bg-slider3.jpg);
 }
 
 .slider-4 {
-    background-image: url(../img/bg-slider4.jpg);
+  background-image: url(../img/bg-slider4.jpg);
 }
 
 @media (min-width: $tablet-width) {
-    .slider {
-        height: 70vh;
-    }
+  .slider {
+    height: 70vh;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .slider {
-        height: 80vh;
-    }
+  .slider {
+    height: 80vh;
+  }
 }

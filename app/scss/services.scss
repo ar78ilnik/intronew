@@ -13,11 +13,10 @@
   }
 
   &__head::after {
-    content: '';
+    content: '#triangle';
     display: block;
     width: 10px;
     height: 10px;
-    background-color: red;
     position: absolute;
     top: 30%;
     right: 0;
