@@ -8,6 +8,17 @@
     width: 100%;
     height: inherit;
     overflow: hidden;
+    position: relative;
+
+    &__message {
+      width: 50%;
+      padding-left: 10%;
+      z-index: 1;
+      position: absolute;
+      top: 20%;
+      left: 0;
+      color: white;
+    }
   }
 
   &-item {
@@ -24,7 +35,7 @@
     width: 8px;
     height: 60px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 5%;
     display: flex;
     flex-direction: column;
@@ -36,6 +47,12 @@
       height: 8px;
       background-color: #414141;
     }
+  }
+
+  &__video {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
   }
 }
 
@@ -59,6 +76,13 @@
   z-index: 1;
   opacity: 1;
   filter: invert(30%);
+}
+
+#slide1:checked ~ .slider-items > .slider-1 {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+  filter: none;
 }
 
 .slider-1 {

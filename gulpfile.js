@@ -23,7 +23,7 @@ function clean() {
 function copy() {
   return gulp.src([
         'app/fonts/**/*.*',
-        'app/img/**/*.{jpg,png,webp}',
+        'app/img/**/*.{jpg,png,webp,mp4}',
         'app/js/*.*'
     ], {
       base: 'app',
